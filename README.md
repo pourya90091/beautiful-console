@@ -29,13 +29,17 @@ Returns beautiful text.
 print(beautiful_console(
     "text",
     "text_color", # color of text
-    "highlight_color", # color of background
+    "text_style", # style of text
+    "text_highlight_color", # color of background
+    "text_blink", # blinking text <True or False>
     "continuous_color", # color of text when typing input
-    "style", # style of text
-    "blink", # blinking text <True or False>
+    "continuous_style", # style of text when typing input
+    "continuous_highlight_color", # color of background when typing input
+    "continuous_blink", # blinking text when typing input <True or False>
     "text_color_degree", # intensity of text color <0 or 1>
-    "highlight_color_degree", # intensity of background color <0 or 1>
+    "text_highlight_color_degree", # intensity of background color <0 or 1>
     "continuous_color_degree", # intensity of continuous color <0 or 1>
+    "continuous_highlight_color_degree", # intensity of continuous background color <0 or 1>
     "get_input" # if this option is True, beautiful_console automatically generates a input-function (and returns input text)
 ))
 ```
