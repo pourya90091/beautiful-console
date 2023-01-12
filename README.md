@@ -1,53 +1,55 @@
 # Beautiful Console
 
-## installation :
+## Installation
 
-install :
+### Install
+
 ```bash
 pip install beautiful-console
 ```
 
-import :
+### Import
+
 ```python
-from beautiful_console.beautiful_console import beautiful_console
+from beautiful_console import beautiful_console as bc
 ```
 
-## defined colors : 
+## Defined Colors
+
 >black, red, green, yellow, blue, magenta, cyan, white
 
-## defined styles :
+## Defined Styles
+
 >**bold**, _italic_, underline, underline_bold, overline, ~~strikethrough~~
 
 <br>
 
-## beautiful_console()
-Returns beautiful text.
+## beautiful_console() Parameters
 
 ```python
-# only the text-parameter is required, then you can use any option you need
+# Only the text-parameter is required, then you can use any option you need.
 
-print(beautiful_console(
-    "text",
-    "text_color", # color of text
-    "text_style", # style of text
-    "text_highlight_color", # color of background
-    "text_blink", # blinking text <True or False>
-    "continuous_color", # color of text when typing input
-    "continuous_style", # style of text when typing input
-    "continuous_highlight_color", # color of background when typing input
-    "continuous_blink", # blinking text when typing input <True or False>
-    "text_color_degree", # intensity of text color <0 or 1>
-    "text_highlight_color_degree", # intensity of background color <0 or 1>
-    "continuous_color_degree", # intensity of continuous color <0 or 1>
-    "continuous_highlight_color_degree", # intensity of continuous background color <0 or 1>
-    "get_input" # if this option is True, beautiful_console automatically generates a input-function (and returns input text)
-))
+"""
+text: A text.
+text_color: Color of the text.
+text_style: Style of the text.
+text_highlight_color: Color of the text background.
+text_blink: Blinking the text <True or False>.
+continuous_color: Color of continuous text (when typing input).
+continuous_style: Style of continuous text.
+continuous_highlight_color: Color of continuous text background.
+continuous_blink: Blinking continuous text <True or False>.
+text_color_degree: Intensity of the text color <0 or 1>
+text_highlight_color_degree: Intensity of text background color <0 or 1>
+continuous_color_degree: Intensity of continuous text color <0 or 1>
+continuous_highlight_color_degree: Intensity of continuous text background color <0 or 1>
+get_input: To use continuous text options it must be True, then beautiful_console() handle a input-function and returns input value.
+"""
 ```
-# Tips : 
 
->**Tip** : some things may not work on some consoles.
+## Tips
 
+>**Tip** : Some things may not work on some consoles.
 
->**Tip** : get_input can only be filled as a keyword argument (get_input=True). 
+>**Tip** : get_input can only be filled as a keyword argument (get_input=True).
 ---
-send your feedbacks to : pourya90091@gmail.com
